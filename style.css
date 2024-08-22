@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,900,100;1,9..144,900,100&display=swap");
+
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.nav-bg {
+  background-color: white;
+  padding: 20px 0px;
+}
+
+.nav-elements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  color: #83888f;
+}
+
+/* Fonts */
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fraunces-900 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "SOFT" 100, "WONK" 0;
+}
+/* Fonts ends */
+
+.hero-section {
+  background-image: url(Hero\ image.png);
+  height: 450px;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  left: 25px;
+  top: 138px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fefcf7;
+  max-width: 500px;
+}
+
+.hero-head {
+  font-size: 72px;
+}
+
+.hero-para {
+  font-size: 16px;
+}
+
+/* Metric section starts */
+
+.metric-section {
+  background-color: #2c343e;
+  padding-top: 140px;
+  padding-bottom: 40px;
+}
+
+.metric-layout {
+  display: flex;
+  padding: 0px 80px;
+  gap: 24px;
+}
+
+.metric-card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.metric-card-number {
+  font-size: 72px;
+  color: #fdd6ba;
+}
+
+.metric-card-head {
+  font-size: 32px;
+  min-height: 64px;
+  color: white;
+}
+
+.metric-card-text {
+  font-size: 16px;
+  color: white;
+}
+
+/* Metric section ends */
+
+/* Order section starts */
+.order-section {
+  /* padding: 0px 40px; */
+}
+.order-layout {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  grid-template-rows: auto;
+  padding: 0px 80px;
+  gap: 100px;
+}
+
+.order-lhs {
+  color: #adb0b2;
+}
+
+.order-lhs-item {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 12px;
+  padding: 24px;
+  border-bottom: 1px solid #dfdfdd;
+  font-size: 20px;
+}
+
+.order-rhs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordion-container {
+  position: relative;
+}
+
+.order-accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: relative; */
+  cursor: pointer;
+}
+
+.accordion-container.active .order-accordion img {
+  transform: rotate(180deg);
+}
+
+/* hides the accordion elements */
+.order-accordion-content {
+  /* position: relative; */
+  /* background: white; */
+  height: 0;
+  /* font-size: 20px; */
+  /* text-align: justify; */
+  /* width: 780px; */
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordion-container.active .order-accordion-content {
+  height: 260px;
+  /* overflow: visible; */
+}
+
+.order-accordion-text {
+  font-size: 32px;
+  color: #83888f;
+  padding: 24px 0px;
+}
+
+.accordion-content-layout {
+  display: flex;
+  gap: 20px;
+}
+
+.accordion-content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 54px 32px;
+  background-color: #f4f1eb;
+  transition: 0.4s;
+  border-radius: 8px;
+}
+
+.accordion-content-head {
+  font-size: 24px;
+  color: #333d4b;
+}
+
+.ccordion-content-text {
+  font-size: 16px;
+  color: #333d4b;
+  line-height: 12px;
+}
+
+.summary {
+  background-color: #2c343e;
+  margin-top: 20px;
+}
+
+.summary-content {
+  padding: 41px 64px;
+  color: white;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.coffee-how,
+.coffee-type,
+.coffee-type,
+.coffee-quantity,
+.coffee-delivery {
+  color: #0e8784;
+}
+
+.accordion-content-card:hover {
+  background-color: #025b59;
+  cursor: pointer;
+}
+
+.accordion-content-card:hover .accordion-content-head,
+.accordion-content-card:hover .accordion-content-text {
+  color: white;
+}
+
+.accordion-content-card.selected {
+  background-color: #0e8784;
+  color: #ffffff;
+}

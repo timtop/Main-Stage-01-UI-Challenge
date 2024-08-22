@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Coffee Roasters</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="nav-bg">
+      <div class="container nav-elements">
+        <a> <img src="Logo.svg" /> </a>
+        <nav class="nav-link barlow-bold">
+          <a>HOME</a>
+          <a>ABOUT US</a>
+          <a>CREATE YOUR PLAN</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="hero-section container">
+      <div class="hero-text">
+        <p class="fraunces-900 hero-head">Create Plan</p>
+        <p class="barlow-regular hero-para">
+          Coffee the way you wanted it to be. For coffee delivered tomorrow, or
+          next week. For whatever brew method you use. For choice, for
+          convenience, for quality.
+        </p>
+      </div>
+    </div>
+
+    <div class="metric-section container">
+      <div class="metric-layout">
+        <div class="metric-card">
+          <p class="metric-card-number fraunces-900">01</p>
+          <p class="metric-card-head fraunces-900">Pick you coffee</p>
+          <p class="metric-card-text barlow-regular">
+            Select from our evolving range of artisan coffees. Our beans are
+            ethically sourced and we pay fair prices for them. There are new
+            coffees in all profiles every month for you to try out.
+          </p>
+        </div>
+        <div class="metric-card">
+          <p class="metric-card-number fraunces-900">02</p>
+          <p class="metric-card-head fraunces-900">Choose the frequency</p>
+          <p class="metric-card-text barlow-regular">
+            Customize your order frequency, quantity, even your roast style and
+            grind type. Pause, skip or cancel your subscription with no
+            commitment through our online portal.
+          </p>
+        </div>
+        <div class="metric-card">
+          <p class="metric-card-number fraunces-900">03</p>
+          <p class="metric-card-head fraunces-900">Receive and enjoy!</p>
+          <p class="metric-card-text barlow-regular">
+            We ship your package within 48 hours, freshly roasted. Sit back and
+            enjoy award-winning world-class coffees curated to provide a
+            distinct tasting experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-section container">
+      <div class="order-layout">
+        <div class="order-lhs">
+          <div class="order-lhs-item fraunces-900">
+            <p class="order-lhs-number">01</p>
+            <p class="order-lhs-name">Pick you coffee</p>
+          </div>
+          <div class="order-lhs-item fraunces-900">
+            <p class="order-lhs-number">02</p>
+            <p class="order-lhs-name">Bean Type</p>
+          </div>
+          <div class="order-lhs-item fraunces-900">
+            <p class="order-lhs-number">03</p>
+            <p class="order-lhs-name">Quantity</p>
+          </div>
+          <div class="order-lhs-item fraunces-900">
+            <p class="order-lhs-number">04</p>
+            <p class="order-lhs-name">Grind Option</p>
+          </div>
+          <div class="order-lhs-item fraunces-900">
+            <p class="order-lhs-number">05</p>
+            <p class="order-lhs-name">Deliveries</p>
+          </div>
+        </div>
+        <div class="order-rhs">
+          <!-- How do you drink your coffee -->
+          <div class="accordion-container">
+            <!-- Accordion label starts-->
+            <div class="order-accordion" onclick="toggleAccordion(this)">
+              <div class="order-accordion-text fraunces-900">
+                How do you drink your coffee?
+              </div>
+              <div><img src="down.png" /></div>
+            </div>
+            <!-- Accordion label ends -->
+
+            <!-- Accordion content starts -->
+            <div class="order-accordion-content">
+              <div class="accordion-content-layout">
+                <div
+                  class="accordion-content-card"
+                  onclick="selectCard('Capsule', 'Capsule')"
+                  id="Capsule"
+                >
+                  <p class="accordion-content-head fraunces-900">Capsule</p>
+                  <p class="accordion-content-text barlow-regular">
+                    Compatible with Nespresso systems and similar brewers
+                  </p>
+                </div>
+
+                <div
+                  class="accordion-content-card"
+                  onclick="selectCard('Filter', 'Filter')"
+                  id="Filter"
+                >
+                  <p class="accordion-content-head fraunces-900">Filter</p>
+                  <p class="accordion-content-text barlow-regular">
+                    For pour over or drip methods like Aeropress, Chemex, and
+                    V60
+                  </p>
+                </div>
+
+                <div
+                  class="accordion-content-card"
+                  onclick="selectCard('Espresso', 'Espresso')"
+                  id="Espresso"
+                >
+                  <p class="accordion-content-head fraunces-900">Espresso</p>
+                  <p class="accordion-content-text barlow-regular">
+                    Dense and finely ground beans for an intense, flavorful
+                    experience
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion content ends -->
+          </div>
+
+          <!--  What type of coffee -->
+          <div class="accordion-container">
+            <!-- Accordion label starts-->
+            <div class="order-accordion" onclick="toggleAccordion(this)">
+              <div class="order-accordion-text fraunces-900">
+                What type of coffee?
+              </div>
+              <div><img src="down.png" /></div>
+            </div>
+            <!-- Accordion label ends -->
+
+            <!-- Accordion content starts -->
+            <div class="order-accordion-content">
+              <div class="accordion-content-layout">
+                <div
+                  class="accordion-content-card"
+                  onclick="selectCard2('Single Origin', 'Single Origin')"
+                  id="Single Origin"
+                >
+                  <p class="accordion-content-head fraunces-900">
+                    Single Origin
+                  </p>
+                  <p class="accordion-content-text barlow-regular">
+                    Distinct, high quality coffee from a specific family-owned
+                    farm
+                  </p>
+                </div>
+
+                <div
+                  class="accordion-content-card"
+                  onclick="selectCard2('Decaf', 'Decaf')"
+                  id="Decaf"
+                >
+                  <p class="accordion-content-head fraunces-900">Decaf</p>
+                  <p class="accordion-content-text barlow-regular">
+                    Just like regular coffee, except the caffeine has been
+                    removed
+                  </p>
+                </div>
+
+                <div
+                  class="accordion-content-card"
+                  onclick="selectCard2('Blended', 'Blended')"
+                  id="Blended"
+                >
+                  <p class="accordion-content-head fraunces-900">Blended</p>
+                  <p class="accordion-content-text barlow-regular">
+                    Combination of two or three dark roasted beans of organic
+                    coffees
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion content ends -->
+          </div>
+
+          <!-- How much would you like -->
+          <div class="accordion-container">
+            <!-- Accordion label starts-->
+            <div class="order-accordion" onclick="toggleAccordion(this)">
+              <div class="order-accordion-text fraunces-900">
+                How would you like it?
+              </div>
+              <div><img src="down.png" /></div>
+            </div>
+            <!-- Accordion label ends -->
+
+            <!-- Accordion content starts -->
+            <div class="order-accordion-content">
+              <div class="accordion-content-layout">
+                <div
+                  class="accordion-content-card"
+                  onclick="selectCard3('250g', '250g')"
+                  id="250g"
+                >
+                  <p class="accordion-content-head fraunces-900">250g</p>
+                  <p class="accordion-content-text barlow-regular">
+                    Perfect for the solo drinker. Yields about 12 delicious
+                    cups.
+                  </p>
+                </div>
+
+                <div
+                  class="accordion-content-card"
+                  onclick="selectCard3('500g', '500g')"
+                  id="500g"
+                >
+                  <p class="accordion-content-head fraunces-900">500g</p>
+                  <p class="accordion-content-text barlow-regular">
+                    Perfect option for a couple. Yields about 40 delectable
+                    cups.
+                  </p>
+                </div>
+
+                <div
+                  class="accordion-content-card"
+                  onclick="selectCard3('1000g', '1000g')"
+                  id="1000g"
+                >
+                  <p class="accordion-content-head fraunces-900">1000g</p>
+                  <p class="accordion-content-text barlow-regular">
+                    Perfect for offices and events. Yields about 90 delightful
+                    cups.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion content ends -->
+          </div>
+
+          <!-- Want us to grind -->
+          <div class="accordion-container">
+            <!-- Accordion label starts-->
+            <div class="order-accordion" onclick="toggleAccordion(this)">
+              <div class="order-accordion-text fraunces-900">
+                Want us to grind them?
+              </div>
+              <div><img src="down.png" /></div>
+            </div>
+            <!-- Accordion label ends -->
+
+            <!-- Accordion content starts -->
+            <div class="order-accordion-content">
+              <div class="accordion-content-layout">
+                <div class="accordion-content-card">
+                  <p class="accordion-content-head fraunces-900">Capsule</p>
+                  <p class="accordion-content-text barlow-regular">
+                    Compatible with Nespresso systems and similar brewers
+                  </p>
+                </div>
+
+                <div class="accordion-content-card">
+                  <p class="accordion-content-head fraunces-900">Capsule</p>
+                  <p class="accordion-content-text barlow-regular">
+                    Compatible with Nespresso systems and similar brewers
+                  </p>
+                </div>
+
+                <div class="accordion-content-card">
+                  <p class="accordion-content-head fraunces-900">Capsule</p>
+                  <p class="accordion-content-text barlow-regular">
+                    Compatible with Nespresso systems and similar brewers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion content ends -->
+          </div>
+
+          <!-- How often should we deliver -->
+          <div class="accordion-container">
+            <!-- Accordion label starts-->
+            <div class="order-accordion" onclick="toggleAccordion(this)">
+              <div class="order-accordion-text fraunces-900">
+                How often should we deliver?
+              </div>
+              <div><img src="down.png" /></div>
+            </div>
+            <!-- Accordion label ends -->
+
+            <!-- Accordion content starts -->
+            <div class="order-accordion-content">
+              <div class="accordion-content-layout">
+                <div
+                  class="accordion-content-card"
+                  onclick="selectCard4('Every week', 'Every week')"
+                  id="Every week"
+                >
+                  <p class="accordion-content-head fraunces-900">Every week</p>
+                  <p class="accordion-content-text barlow-regular">
+                    $7.20 per shipment. Includes free first-class shipping.
+                  </p>
+                </div>
+
+                <div
+                  class="accordion-content-card"
+                  onclick="selectCard4('Every 2 week', 'Every 2 week')"
+                  id="Every 2 week"
+                >
+                  <p class="accordion-content-head fraunces-900">
+                    Every 2 weeks
+                  </p>
+                  <p class="accordion-content-text barlow-regular">
+                    $9.60 per shipment. Includes free priority shipping.
+                  </p>
+                </div>
+
+                <div
+                  class="accordion-content-card"
+                  onclick="selectCard4('Every month', 'Every month')"
+                  id="Every month"
+                >
+                  <p class="accordion-content-head fraunces-900">Every month</p>
+                  <p class="accordion-content-text barlow-regular">
+                    $12.00 per shipment. Includes free priority shipping.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion content ends -->
+          </div>
+
+          <!-- Order deliver -->
+          <div class="summary">
+            <div class="summary-content fraunces-900">
+              I drink my coffee using
+              <span class="coffee-how" id="coffee-how">Capsules</span>, with a
+              <span class="coffee-type" id="coffee-type">Decaf</span> type of
+              bean.
+              <span class="coffee-quantity" id="coffee-quantity">250g</span>,
+              sent to me
+              <span class="coffee-delivery" id="coffee-delivery"
+                >Every Week</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>
